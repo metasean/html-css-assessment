@@ -45,6 +45,7 @@ html, body {
 	margin-left: auto;
 	margin-right: 0.5em;
 	position: relative;
+	float: right;
 }
 
 .button .equivalent-symbol {
@@ -67,6 +68,7 @@ html, body {
 	border-radius: 6px;
 	font-family: "Open Sans", "sans-seriff";
 	float: left;
+	position: relative;
 }
 
 .list-title {
@@ -145,3 +147,42 @@ html, body {
 	background: #F5F5F5;
 	border-color: #E3E3E3;
 }
+/*
+.plus-symbol {
+	position: relative;
+	height: 10.5em;
+	width: 100%;
+	line-height: 10em;
+	background: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.plus-symbol-outer {
+	color: #D6D6D6;
+	/*font-size: 12em;*/
+	flex: 2;
+	font-weight: bold;
+	z-index: 0;
+	position: absolute;
+}
+
+.plus-symbol-middle {
+	color: #000;
+	/*font-size: 11em;*/
+	flex: 1;
+	z-index: 1;
+	position: absolute;
+	margin: auto auto;
+}
+
+.plus-symbol-inner {
+	color: red;
+	/*font-size: 8em;*/
+	flex: 0;
+	font-weight: bold;
+	z-index: 2;
+	position: absolute;
+}
+*/
