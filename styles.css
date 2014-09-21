@@ -2,5 +2,123 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+}
+
+.title-bar {
+	width: 100%;
 	background: #000;
+	color: #999;
+	font-family: "Open Sans", "sans-seriff";
+	font-size: 2.5em;
+	margin-bottom: 0.25em;
+	position: static;
+	line-height: 2em;
+}
+
+.equivalent-symbol {
+	vertical-align: -0.15em;
+	z-index: 0;
+	position: relative;
+}
+
+.title-bar .equivalent-symbol {
+	font-size: 3em;
+}
+
+.equivalent-bar {
+	vertical-align: bottom;
+	z-index: 1;
+	position: relative;
+	margin-left: -1.4em;
+}
+
+.title-bar .equivalent-bar {
+	font-size: 1em;
+	color: #000;
+}
+
+.list {
+	width: 27%;
+	min-width: 20em;
+	max-width: 40em;
+	margin: 20px 20px 10px 20px;
+	height: 14.5em;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 6px;
+	font-family: "Open Sans", "sans-seriff";
+	float: left;
+}
+
+.list-title {
+	height: 2em;
+	padding: 0 0 0 1em;
+	margin: 0 0 1em 0;
+	display: flex;
+	align-items: center;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+}
+
+.list-item {
+	width: 90%;
+	height: 2em;
+	border-color: #eee;
+	border-style: solid;
+	border-width: 0 2px 2px 2px;
+	font-family: "Open Sans", "sans-seriff";
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	padding-left: 0.5em;
+}
+
+.list .list-item:nth-child(2) {
+	border-radius: 4px 4px 0 0 ;
+	border-top-width: 2px;
+}
+
+.list .list-item:last-child {
+	border-radius: 0 0 4px 4px;
+}
+
+.new {
+	border-color: #F6E7E9;
+}
+
+.new .list-title  {
+	border-color: #F6E7E9;
+	color: #92624F;
+	background: #F4DEDE;
+
+}
+
+.in-progress {
+	border-color: #FCEFD9;
+}
+
+.in-progress .list-title {
+	color: #BA9C6E;
+	background: #FDF8E4;
+	border-color: #FCEFD9;
+}
+
+.archived {
+	border-color: #DFEDD6;
+}
+
+.archived .list-title {
+	color: #2C653E;
+	background: #DDF0D9;
+	border-color: #DFEDD6;
+}
+
+.create-new {
+	border-color: #E3E3E3;
+}
+
+.create-new .list-title {
+	color: #4A4958;
+	background: #F5F5F5;
+	border-color: #E3E3E3;
 }
