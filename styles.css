@@ -2,6 +2,9 @@ html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+/*	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;*/
 }
 
 .title-bar {
@@ -16,25 +19,41 @@ html, body {
 }
 
 .equivalent-symbol {
-	vertical-align: -0.15em;
 	z-index: 0;
 	position: relative;
 }
 
+.equivalent-bar {
+	z-index: 1;
+	position: relative;
+}
+
 .title-bar .equivalent-symbol {
+	vertical-align: -0.15em;
 	font-size: 3em;
 }
 
-.equivalent-bar {
-	vertical-align: bottom;
-	z-index: 1;
-	position: relative;
-	margin-left: -1.4em;
+.title-bar .equivalent-bar {
+	font-size: 1.75em;
+	color: #000;
+	vertical-align: -.1em;
+	margin-left: -0.75em;
 }
 
-.title-bar .equivalent-bar {
-	font-size: 1em;
-	color: #000;
+.button {
+	color: #4E89C1;
+	margin-left: auto;
+	margin-right: 0.5em;
+	position: relative;
+}
+
+.button .equivalent-symbol {
+	font-size: 1.5em;
+	margin-right: -0.6em;
+}
+
+.button .equivalent-bar {
+	font-size: 1.5em;
 }
 
 .list {
@@ -90,7 +109,11 @@ html, body {
 	border-color: #F6E7E9;
 	color: #92624F;
 	background: #F4DEDE;
+}
 
+.button .equivalent-bar {
+	font-size: 1.5em;
+	color: #F4DEDE;
 }
 
 .in-progress {
